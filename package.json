@@ -1,0 +1,26 @@
+{
+  "name": "crawler",
+  "version": "1.0.0",
+  "description": "Captura informações de preço da loja centauro",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc && node ./build/src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andriusrl/crawler.git"
+  },
+  "author": "Andrius",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andriusrl/crawler/issues"
+  },
+  "homepage": "https://github.com/andriusrl/crawler#readme",
+  "dependencies": {
+    "@types/node": "^14.0.27",
+    "axios": "^0.19.2",
+    "ts-node-dev": "^1.0.0-pre.56",
+    "typescript": "^3.9.7"
+  }
+}
