@@ -1,4 +1,4 @@
-export const offData = {
+export const off = {
     "disponibilidade": {
         "codigoModelo": "934745",
         "nome": "Tênis Nike Zoom Rival Fly - Masculino",
