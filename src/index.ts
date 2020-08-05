@@ -36,12 +36,12 @@ async function getProduct(urlPage: string): Promise<any> {
     //codigos atras estão comentados porque estou com problemas na internet e estou usando um mock de dados
     // console.log(offData.disponibilidade.cores)
     // const urls: = response.imagens[0].urls
-    // console.log(urls)
+    // console.log(offData.disponibilidade.cores.map(cor=>{return cor.nomeCor}))
     return new Product(
         response.disponibilidade.nome,
         parseFloat(response.precos[0].valor),
         response.imagens[0].urls.filter((image: { resolucao: string; })=>{return image.resolucao==="500x500"})[0].url,
-
+        response.disponibilidade.cores.map((cor: { nomeCor: any; })=>{return cor.nomeCor})
     )
 }
 

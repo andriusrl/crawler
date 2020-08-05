@@ -1,24 +1,24 @@
 export class Product {
     constructor(
-        private title: string,
-        private price: number,
-        private image: string,
-        private avaibleColors?: string[] | null
+        private titulo: string,
+        private preco: number,
+        private imagem: string,
+        private coresDisponiveis?: string[] | null
     ) { }
     
     public getTitle(): string {
-        return this.title
+        return this.titulo
     }
 
     public getPrice(): number {
-        return this.price
+        return this.preco
     }
 
     public getImage(): string {
-        return this.image
+        return this.imagem
     }
 
     public getAvaibleColors(): string[] | null | undefined{
-        return this.avaibleColors
+        return this.coresDisponiveis
     }
 }
